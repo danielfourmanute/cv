@@ -1,0 +1,361 @@
+{
+ "owner": "danielfourmanute",
+ "geradoEm": "2026-11-20",
+ "metodo": "GraphQL repositoryOwner(login).repositories(ownerAffiliations:OWNER); forks excluidos; commits do branch padrao; volume por linguagem em bytes atribuidos pelo GitHub Linguist.",
+ "resumo": {
+  "repositoriosProprios": 33,
+  "publicos": 2,
+  "privados": 31,
+  "commits": 1359,
+  "volumeMb": 298.9,
+  "forksExcluidos": [
+   "500-AI-Agents-Projects",
+   "net-inventory-ia",
+   "Dexo",
+   "usd-brep"
+  ]
+ },
+ "porLinguagemMb": {
+  "Python": 97.24,
+  "JavaScript": 26.35,
+  "HTML": 22.26,
+  "Vue": 3.62,
+  "CSS": 2.23,
+  "TypeScript": 1.24,
+  "Go": 0.94,
+  "C": 0.5,
+  "PLpgSQL": 0.48,
+  "SCSS": 0.29,
+  "Batchfile": 0.22,
+  "Java": 0.13,
+  "Shell": 0.09,
+  "PowerShell": 0.07,
+  "Dockerfile": 0.04,
+  "Makefile": 0.02,
+  "Mako": 0.02,
+  "PLSQL": 0.0,
+  "Dart": 0.0,
+  "PureBasic": 0.0
+ },
+ "porLinguagemPct": {
+  "Python": 62.4,
+  "JavaScript": 16.9,
+  "HTML": 14.3,
+  "Vue": 2.3,
+  "CSS": 1.4,
+  "TypeScript": 0.8,
+  "Go": 0.6,
+  "C": 0.3,
+  "PLpgSQL": 0.3,
+  "SCSS": 0.2,
+  "Batchfile": 0.1,
+  "Java": 0.1,
+  "Shell": 0.1,
+  "PowerShell": 0.0,
+  "Dockerfile": 0.0,
+  "Makefile": 0.0,
+  "Mako": 0.0,
+  "PLSQL": 0.0,
+  "Dart": 0.0,
+  "PureBasic": 0.0
+ },
+ "repos": [
+  {
+   "name": "sig",
+   "private": true,
+   "primaryLanguage": "Python",
+   "commits": 473,
+   "diskMb": 17.46,
+   "createdAt": "2026-05-26",
+   "pushedAt": "2026-11-19"
+  },
+  {
+   "name": "revest_middleware",
+   "private": true,
+   "primaryLanguage": "Python",
+   "commits": 266,
+   "diskMb": 35.63,
+   "createdAt": "2026-06-05",
+   "pushedAt": "2026-11-20"
+  },
+  {
+   "name": "gis-financeiro",
+   "private": true,
+   "primaryLanguage": "Python",
+   "commits": 112,
+   "diskMb": 5.83,
+   "createdAt": "2025-11-18",
+   "pushedAt": "2026-05-26"
+  },
+  {
+   "name": "sig-revest",
+   "private": true,
+   "primaryLanguage": "Python",
+   "commits": 98,
+   "diskMb": 10.85,
+   "createdAt": "2026-08-31",
+   "pushedAt": "2026-10-01"
+  },
+  {
+   "name": "revest_sig",
+   "private": true,
+   "primaryLanguage": "Python",
+   "commits": 73,
+   "diskMb": 2.9,
+   "createdAt": "2026-09-02",
+   "pushedAt": "2026-09-10"
+  },
+  {
+   "name": "revest-sig",
+   "private": true,
+   "primaryLanguage": "Python",
+   "commits": 69,
+   "diskMb": 24.55,
+   "createdAt": "2026-09-11",
+   "pushedAt": "2026-11-10"
+  },
+  {
+   "name": "tintasmc",
+   "private": true,
+   "primaryLanguage": "Python",
+   "commits": 50,
+   "diskMb": 2.47,
+   "createdAt": "2026-06-18",
+   "pushedAt": "2026-10-29"
+  },
+  {
+   "name": "monitor_credito_assistido",
+   "private": true,
+   "primaryLanguage": "Python",
+   "commits": 37,
+   "diskMb": 1.27,
+   "createdAt": "2026-09-29",
+   "pushedAt": "2026-10-13"
+  },
+  {
+   "name": "lagom_revest",
+   "private": true,
+   "primaryLanguage": "Python",
+   "commits": 31,
+   "diskMb": 4.25,
+   "createdAt": "2026-02-28",
+   "pushedAt": "2026-10-13"
+  },
+  {
+   "name": "revest_wms_trial",
+   "private": true,
+   "primaryLanguage": "Python",
+   "commits": 26,
+   "diskMb": 0.55,
+   "createdAt": "2026-04-07",
+   "pushedAt": "2026-06-16"
+  },
+  {
+   "name": "lagom_acefer",
+   "private": true,
+   "primaryLanguage": "Python",
+   "commits": 25,
+   "diskMb": 3.95,
+   "createdAt": "2026-09-28",
+   "pushedAt": "2026-11-18"
+  },
+  {
+   "name": "lagon_tintasmc",
+   "private": true,
+   "primaryLanguage": "Python",
+   "commits": 21,
+   "diskMb": 60.73,
+   "createdAt": "2025-11-21",
+   "pushedAt": "2026-09-17"
+  },
+  {
+   "name": "faz_predify",
+   "private": true,
+   "primaryLanguage": null,
+   "commits": 9,
+   "diskMb": 0.01,
+   "createdAt": "2025-08-28",
+   "pushedAt": "2025-09-24"
+  },
+  {
+   "name": "lagom_gasparetto",
+   "private": true,
+   "primaryLanguage": "Python",
+   "commits": 9,
+   "diskMb": 3.54,
+   "createdAt": "2026-10-29",
+   "pushedAt": "2026-10-29"
+  },
+  {
+   "name": "enthus_funrural",
+   "private": true,
+   "primaryLanguage": "CSS",
+   "commits": 8,
+   "diskMb": 27.96,
+   "createdAt": "2024-12-05",
+   "pushedAt": "2025-01-06"
+  },
+  {
+   "name": "fazendao-sig",
+   "private": true,
+   "primaryLanguage": "PLpgSQL",
+   "commits": 8,
+   "diskMb": 0.37,
+   "createdAt": "2026-11-17",
+   "pushedAt": "2026-11-20"
+  },
+  {
+   "name": "lagom_sotintas",
+   "private": true,
+   "primaryLanguage": "Python",
+   "commits": 7,
+   "diskMb": 3.12,
+   "createdAt": "2026-02-28",
+   "pushedAt": "2026-11-12"
+  },
+  {
+   "name": "viaflix-old",
+   "private": true,
+   "primaryLanguage": "Python",
+   "commits": 6,
+   "diskMb": 0.03,
+   "createdAt": "2025-08-14",
+   "pushedAt": "2025-08-14"
+  },
+  {
+   "name": "fazendao_integracao",
+   "private": true,
+   "primaryLanguage": "Python",
+   "commits": 5,
+   "diskMb": 49.1,
+   "createdAt": "2026-04-15",
+   "pushedAt": "2026-05-12"
+  },
+  {
+   "name": "fazendao-middleware",
+   "private": true,
+   "primaryLanguage": "Python",
+   "commits": 5,
+   "diskMb": 0.46,
+   "createdAt": "2026-06-10",
+   "pushedAt": "2026-07-28"
+  },
+  {
+   "name": "lagom_biadola",
+   "private": true,
+   "primaryLanguage": "Python",
+   "commits": 4,
+   "diskMb": 3.48,
+   "createdAt": "2026-09-29",
+   "pushedAt": "2026-10-19"
+  },
+  {
+   "name": "fazendao_roomvo",
+   "private": true,
+   "primaryLanguage": "Python",
+   "commits": 3,
+   "diskMb": 1.36,
+   "createdAt": "2026-04-07",
+   "pushedAt": "2026-06-23"
+  },
+  {
+   "name": "lagom_bling",
+   "private": false,
+   "primaryLanguage": "TypeScript",
+   "commits": 3,
+   "diskMb": 0.3,
+   "createdAt": "2026-11-04",
+   "pushedAt": "2026-11-11"
+  },
+  {
+   "name": "lagom_fazenda",
+   "private": true,
+   "primaryLanguage": "Python",
+   "commits": 2,
+   "diskMb": 0.01,
+   "createdAt": "2024-11-30",
+   "pushedAt": "2024-11-30"
+  },
+  {
+   "name": "viaflix",
+   "private": true,
+   "primaryLanguage": "Python",
+   "commits": 2,
+   "diskMb": 17.58,
+   "createdAt": "2025-10-13",
+   "pushedAt": "2025-10-13"
+  },
+  {
+   "name": "revest-middleware-old",
+   "private": true,
+   "primaryLanguage": "Vue",
+   "commits": 2,
+   "diskMb": 17.45,
+   "createdAt": "2026-05-18",
+   "pushedAt": "2026-05-26"
+  },
+  {
+   "name": "lagom_viasoft",
+   "private": true,
+   "primaryLanguage": null,
+   "commits": 1,
+   "diskMb": 0.01,
+   "createdAt": "2024-11-30",
+   "pushedAt": "2024-11-30"
+  },
+  {
+   "name": "lagom_integrador",
+   "private": true,
+   "primaryLanguage": null,
+   "commits": 1,
+   "diskMb": 0.01,
+   "createdAt": "2025-05-12",
+   "pushedAt": "2025-05-12"
+  },
+  {
+   "name": "cmaq",
+   "private": true,
+   "primaryLanguage": "Python",
+   "commits": 1,
+   "diskMb": 3.47,
+   "createdAt": "2025-10-13",
+   "pushedAt": "2025-10-13"
+  },
+  {
+   "name": "weihermann-site",
+   "private": false,
+   "primaryLanguage": null,
+   "commits": 1,
+   "diskMb": 0.0,
+   "createdAt": "2025-12-02",
+   "pushedAt": "2025-12-02"
+  },
+  {
+   "name": "tintasmc-middleware",
+   "private": true,
+   "primaryLanguage": "Python",
+   "commits": 1,
+   "diskMb": 0.22,
+   "createdAt": "2026-06-10",
+   "pushedAt": "2026-06-10"
+  },
+  {
+   "name": "chat-focco",
+   "private": true,
+   "primaryLanguage": null,
+   "commits": 0,
+   "diskMb": 0.0,
+   "createdAt": "2025-09-16",
+   "pushedAt": "2025-09-16"
+  },
+  {
+   "name": "v4-flexivel",
+   "private": true,
+   "primaryLanguage": null,
+   "commits": 0,
+   "diskMb": 0.0,
+   "createdAt": "2025-10-13",
+   "pushedAt": "2025-10-13"
+  }
+ ]
+}
