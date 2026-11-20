@@ -18,7 +18,7 @@
 
 ## Resumo
 
-Analista de sistemas com trajetória iniciada em 1994: programador desde 2001, **sócio-gerente da Hightech Sistemas (1998-2010) responsável pelo desenvolvimento do ERP** da casa, **Gestor da Unidade Indústria da Viasoft (2011-2013)** em Pato Branco/PR — liderando programadores, consultores e suporte sobre uma carteira de clientes industriais de vários segmentos — e, desde 01/08/2019, proprietário da **DJT Sistemas**, atividade exercida em paralelo ao vínculo CLT.
+Analista de sistemas com trajetória iniciada em 1994: programador desde 2001, **sócio-gerente da Hightech Sistemas (1998-2010) responsável pelo desenvolvimento do ERP** da casa, **Gestor da Unidade Indústria da Viasoft (2011-2013)** em Pato Branco/PR — liderando programadores, consultores e suporte sobre uma carteira de clientes industriais de vários segmentos — e, desde 01/08/2019, proprietário da **DJT Sistemas**, atividade exercida em paralelo aos vínculos CLT: Vieli Consultoria Industrial de 01/11/2017 a 18/04/2021 e, desde 19/04/2021, Móveis Weihermann S.A.
 
 O meu eixo é sempre o mesmo: **fazer o sistema de informação refletir a operação real**. Isso me levou do chão de fábrica (leitura de CLP, sensores e contadores para OEE em tempo real) ao fechamento contábil de custos e estoques, da programação de produção alinhada ao Comercial às integrações entre DRP, e-commerce, ERP e APIs bancárias — e hoje à camada de IA que consulta esse patrimônio de dados com segurança.
 
@@ -40,7 +40,7 @@ Trabalho de forma intensiva com **ferramentas de IA no ciclo de entrega** (Claud
 ## Experiência
 
 ### Móveis Weihermann S.A. — sistemas, PCP e custos
-**atuação via DJT Sistemas · em aberto** · São Bento do Sul/SC
+**19/04/2021 – até o momento (vínculo registrado em carteira de trabalho)** · São Bento do Sul/SC
 
 Atendimento de ponta a ponta da operação de informação da indústria moveleira:
 
@@ -69,7 +69,7 @@ Serviços de **integração de software** entre plataformas de parceiros e os ER
 - 33 repositórios próprios e 1.359 commits versionados, com especificação, ADRs, migrations, testes e documentação de implantação e rollback.
 
 ### Vieli Consultoria Industrial Ltda — Analista de Desenvolvimento de Sistemas
-**11/2017 – em aberto (CLT)** · São Bento do Sul/SC · CBO 212405
+**01/11/2017 – 18/04/2021 (CLT)** · São Bento do Sul/SC · CBO 212405
 
 - **Responsável pela primeira versão do sistema de controle de apontamentos de OEE**: leitura em tempo real da parada de máquina, produção (ML, M2 e contadores) e estado por equipamento.
 - Conexão direta com **CLPs WEG PL300, Panasonic, Siemens e Raspberry Pi** pelo protocolo **Modbus**, com programação básica nos CLPs e integração de **sensores industriais** (encoder, sensor indutivo).
@@ -88,14 +88,14 @@ Serviços de **integração de software** entre plataformas de parceiros e os ER
 - **Sócio-gerente responsável pelo desenvolvimento do ERP** da empresa: ciclo completo de análise, desenvolvimento, implantação e sustentação.
 
 ### AMC Prestadora de Serviços Ltda — Programador de Computador
-**08/2001 – 06/2002** · São Bento do Sul/SC · CBO 8420
+**01/08/2001 – 19/06/2002** · São Bento do Sul/SC · CBO 8420
 
 - Programação de sistemas corporativos; primeiro registro formal na função de programador.
 
 ### Início de carreira
-**1994 – 1995** · São Bento do Sul/SC
+**01/02/1994 – 30/06/1995** · São Bento do Sul/SC
 
-- Operador de máquinas de processamento de dados na **Muricy Infor** (treinamento, desenvolvimento e assessoria em informática) e rotinas administrativas — primeiro contato profissional com sistema de informação.
+- **Paulo Roberto Scheide** (01/02/1994 – 15/04/1994, anotado como primeiro emprego) e **Muricy Infor** (19/04/1994 – 01/09/1994), na função 34290 — operadores de máquinas de processamento de dados; nova passagem pela Scheide entre 01/03/1995 e 30/06/1995. Rotinas administrativas e de processamento: primeiro contato profissional com sistema de informação.
 
 ---
 
@@ -167,7 +167,7 @@ python3 tools/coleta-github.py        # requer gh autenticado
 
 **Formação acadêmica, certificações e idiomas:** a confirmar — envie a informação e eu publico nesta seção em um commit.
 
-**Contato:** [github.com/danielfourmanute](https://github.com/danielfourmanute) → *Issues ou mensagem direta no GitHub*. Se preferir receber por e-mail/WhatsApp, me avise que acrescento aqui (por segurança, **CPF e data de nascimento não são publicados** neste repositório público).
+**Contato:** [daniel.fendrich@gmail.com](mailto:daniel.fendrich@gmail.com) · +55 47 99668-8332 · [LinkedIn](https://www.linkedin.com/in/danielfendrich/) · [github.com/danielfourmanute](https://github.com/danielfourmanute) (issues ou mensagem direta). Por segurança, **CPF e data de nascimento não são publicados** neste repositório público.
 
 📍 São Bento do Sul/SC — atendimento presencial na região (São Bento do Sul, Mafra, Joinville, Pato Branco) e remoto para todo o Brasil.
 
