@@ -97,13 +97,15 @@ Back-end **Go** com front-end Vue/Vite e PostgreSQL, e biblioteca de skills de U
 
 ![Volume de código por linguagem](assets/stack.png)
 
+O volume total medido pelo GitHub Linguist é 155,7 MB; os 298,9 MB incluem arquivos não atribuídos a linguagem (dados, imagens, artefatos).
+
 | Métrica | Valor |
 |---|---|
 | Repositórios próprios (forks excluídos) | 33 |
 | Commits no branch padrão | 1.359 |
 | Volume versionado | 298,9 MB |
-| Python | 97,2 MB (71%) |
-| Camada de interface (HTML/JS/Vue/TS/CSS/SCSS) | 38,3 MB (28% do código contabilizado) |
+| Python | 97,2 MB — 62,4% do volume de código medido; linguagem principal em 23 dos 33 repositórios |
+| Camada de interface (HTML/JS/Vue/TS/CSS/SCSS) | 56,0 MB — 36,0% do volume de código medido |
 | Arquivos `.py` só no SIG | 1.200 |
 | Arquivos `.sql` só no SIG | 547 |
 | Anos com atividade versionada | 2024, 2025, 2026 |
@@ -124,17 +126,6 @@ Boa parte do meu trabalho não é código versionável, e prefiro não inflar n�
 - **Gestão de pessoas e carteira** (Viasoft, Unidade Indústria, 2011-2013) e o **desenvolvimento do ERP da Hightech Sistemas** como sócio-gerente (1998-2010).
 - Levantamento de requisito, treinamento de usuários e sustentação em ambiente de cliente.
 
----
-
-## 7. Métricas apuradas
-
-| Métrica | Valor |
-|---|---|
-| Repositórios próprios (forks excluídos) | 33 |
-| Commits no branch padrão | 1.359 |
-| Volume versionado | 298,9 MB |
-| Python | 97,2 MB (71%) |
-| Camada de interface (HTML/JS/Vue/TS/CSS/SCSS) | 38,3 MB (28% do código contabilizado) |
 
 ---
 
