@@ -136,7 +136,7 @@ flowchart LR
 | Repositório | Descrição |
 |---|---|
 | [**lagom_bling**](https://github.com/danielfourmanute/lagom_bling) | Middleware entre o DRP Lagom e a API v3 do Bling: Fastify, contratos de domínio, idempotência, máquina de estados, Prisma e Docker |
-| [**weihermann-site**](https://github.com/danielfourmanute/weihermann-site) | Página publicada via GitHub Pages |
+| [**weihermann-site**](https://github.com/danielfourmanute/weihermann-site) | Repositório de GitHub Pages aberto para o site institucional (ainda só o esqueleto) |
 | [Dexo](https://github.com/danielfourmanute/Dexo) · [net-inventory-ia](https://github.com/danielfourmanute/net-inventory-ia) · [usd-brep](https://github.com/danielfourmanute/usd-brep) · [500-AI-Agents-Projects](https://github.com/danielfourmanute/500-AI-Agents-Projects) | Forks de estudo e acompanhamento de tecnologia (Rust, TypeScript, C++, agentes de IA) — não são autoria minha e por isso ficam fora das métricas |
 
 ### Projetos de cliente — conteúdo restrito por contrato
