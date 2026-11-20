@@ -2,14 +2,14 @@
 
 Portfólio completo da **DJT Sistemas**: 33 repositórios próprios (2 públicos, 31 de cliente com acesso restrito), 1.359 commits e ~299 MB versionados.
 
-**Como ler este documento:** os repositórios de cliente mantêm o conteúdo sob reserva comercial; descrevo aqui **o que cada sistema faz, o que integra e quais dados ele gera e controla** — telas, repositórios e referências são apresentados mediante solicitação. Os clientes do setor moveleiro são citados nominalmente porque o projeto foi aprovado para divulgação.
+**Como ler este documento:** os repositórios de cliente mantêm o conteúdo sob reserva comercial; descrevo aqui **o que cada sistema faz, o que integra e quais dados ele gera e controla** — telas, repositórios e referências são apresentados mediante solicitação. Têm nome explícito aqui os contratos autorizados para divulgação: **Móveis Weihermann S.A.**, **Lagom**, **Tintas MC** e **Revest**. Demais clientes permanecem descritos por segmento.
 
 ---
 
 ## 1. BI e gestão — SIG
 
-### `sig` — Sistema de Informações Gerenciais · Móveis Weihermann *(473 commits, 17,5 MB)*
-Sistema que extrai e consolida a informação do **ERP FOCCO** em PostgreSQL e a devolve como gestão.
+### `sig` — Sistema de Informações Gerenciais · **Móveis Weihermann S.A.** *(473 commits, 17,5 MB)*
+Sistema que extrai e consolida a informação do **ERP FOCCO** em PostgreSQL e a devolve como gestão — sustenta o suporte interno ao ERP, os **fechamentos de custos contábeis e de estoques** e a **programação de produção do PCP** alinhada ao Comercial.
 
 - **Domínios:** `financeiro_app`, `comercial_app`, `compras_app`, `estoques_app`, `pcp_app`, `projetos_app`, `cadastros_app` + `shared_core` de contratos comuns.
 - **Regra de arquitetura:** a integração FOCCO → PostgreSQL vive exclusivamente em um serviço **Go** dedicado; nenhuma refatoração de domínio pode movê-la para Flask/Python.
@@ -21,8 +21,8 @@ Sistema que extrai e consolida a informação do **ERP FOCCO** em PostgreSQL e a
 ### `gis-financeiro` — Financeiro, DRE e fluxo de caixa *(112 commits)*
 Geração anterior do SIG: controle de fluxo de caixa, DRE, contas a pagar e receber, relatórios consolidados multiempresa, regionais e mensais, com importadores auditados de bancos, agências e tipos de NF.
 
-### `sig-revest` / `revest_sig` / `revest-sig` — SIG em novo cliente + DataLake *(240 commits)*
-Instância independente do SIG com as integrações migradas de FOCCO para **DevCo/iDempiere**, evoluindo para uma base com DataLake:
+### `sig-revest` / `revest_sig` / `revest-sig` — SIG da **Revest** + DataLake *(240 commits)*
+Instância independente do SIG para a **Revest**, com as integrações migradas de FOCCO para **DevCo/iDempiere**, evoluindo para uma base com DataLake:
 
 - **7 pipelines de importação medidos lado a lado** (`c_bpartner`, `m_product`): dbt (raw JSONB → staging → marts incrementais), MongoDB com upsert em lote, Pandas com `COPY` comparado a `to_sql(method="multi")`, Spring Batch para PostgreSQL (JDBC batch upsert) e para MongoDB (bulk upsert), Apache NiFi com `MERGE`/`ON CONFLICT` e `PutMongoRecord`.
 - **Stack observável:** PostgreSQL, MongoDB, Prometheus, postgres-exporter, mongodb-exporter, node-exporter e cAdvisor em Docker Compose próprio, com volumes, redes e schemas prefixados — leitura somente `GET` no ERP, nenhuma escrita.
@@ -40,14 +40,14 @@ Plataforma de conciliação bancária e auditoria financeira de rede de material
 
 ## 2. Integrações ERP — middlewares
 
-### `revest_middleware` — Middleware de integração entre sistemas *(266 commits, 35,6 MB)*
-Especificação por módulo (setup, shell, auth, admin, configurações, DevCo, Lagom, PDV) com skills de **preservação de contrato** e **planejamento de migração WMS**. Flask + SQLAlchemy + Marshmallow + Flasgger (Swagger), Pandas/openpyxl para carga de contas a pagar e condições de pagamento, PostgreSQL, Docker.
+### `revest_middleware` — Middleware de integração entre sistemas · **Revest** *(266 commits, 35,6 MB)*
+Escopo autorizado: **middleware entre o ERP DevCo, o WMS, as APIs bancárias e a automação das notas de transferência entre filiais**. Especificação por módulo (setup, shell, auth, admin, configurações, DevCo, Lagom, PDV) com skills de **preservação de contrato** e **planejamento de migração WMS**. Flask + SQLAlchemy + Marshmallow + Flasgger (Swagger), Pandas/openpyxl para carga de contas a pagar e condições de pagamento, PostgreSQL, Docker.
 
 ### `revest_wms_trial` — Pilote de migração para WMS *(26 commits)*
 Cliente/serviço DevCo com validação de contrato, plano de migração versionado, relatório de auditoria em checklist e coleção Postman de aceitação.
 
-### `lagom_*` — DRP Lagom ↔ ERP de cada cliente *(83 commits no conjunto)*
-Mesma base Flask reutilizada para integrações de distribuição:
+### `lagom_*` — DRP **Lagom** ↔ ERP dos clientes da Lagom *(83 commits no conjunto)*
+A **Lagom** (software house de Curitiba/PR) vende um DRP de otimização de estoques; a DJT faz a ponte entre o DRP e o ERP de cada cliente dela — **Citel, Flex, Bling e Viasoft**. Mesma base Flask reutilizada:
 
 | Repositório | Par integrado | O que faz |
 |---|---|---|
@@ -59,8 +59,8 @@ Mesma base Flask reutilizada para integrações de distribuição:
 | `lagom_viasoft` / `lagom_fazenda` | Lagom ↔ Viasoft Construshow | Primeiras rotinas de integração entre DRP e ERP |
 | [`lagom_bling`](https://github.com/danielfourmanute/lagom_bling) | Lagom ↔ Bling API v3 | **Público** — base auditável: Fastify read-only, contratos de domínio, chave de idempotência, máquina de estados, Prisma + migrations, Vue 3/PrimeVue, escrita desligada por padrão |
 
-### `tintasmc` / `lagon_tintasmc` / `tintasmc-middleware` / `fazendao-middleware` — Middleware padrão VTEX ↔ GIX *(77 commits no conjunto)*
-Monorepo `uv` com `apps/api` (FastAPI) e `apps/web` (Vue/Sakai), workers de sincronização de catálogo, coleção Postman, documentação de pré-requisitos para reativação de jobs e **agentes de IA de projeto** definidos em `.claude/agents` (integrador backend, arquiteto frontend, observabilidade PostgreSQL, arquiteto de solução).
+### `tintasmc` / `lagon_tintasmc` / `tintasmc-middleware` — Middleware **VTEX ↔ GIX** da **Tintas MC** *(77 commits no conjunto)*
+Escopo autorizado: **middleware entre a plataforma VTEX (e-commerce) e o ERP GIX** da Tintas MC, maior distribuidora Suvinil do Brasil. Monorepo `uv` com `apps/api` (FastAPI) e `apps/web` (Vue/Sakai), workers de sincronização de catálogo, coleção Postman, documentação de pré-requisitos para reativação de jobs e **agentes de IA de projeto** definidos em `.claude/agents` (integrador backend, arquiteto frontend, observabilidade PostgreSQL, arquiteto de solução).
 
 ### `revest-middleware-old` — Primeira geração em Go *(2 commits)*
 Back-end **Go** com front-end Vue/Vite e PostgreSQL, e biblioteca de skills de UI (PrimeVue: botão, gráfico, tabela, formulário) reutilizadas nos projetos seguintes.
@@ -112,8 +112,30 @@ Os números são reproduzíveis por [`tools/coleta-github.py`](tools/coleta-gith
 
 ---
 
-## 6. O que ainda não está aqui
+## 6. O que não está no GitHub (e não entra nas métricas)
 
-Trabalho entregue fora do GitHub (procedures de banco, rotinas de ERP ajustadas no cliente, sustentação e levantamento de requisitos) não entra nas métricas: prefiro contar só o que posso mostrar.
+Boa parte do meu trabalho não é código versionável, e prefiro não inflar números com ele:
+
+- **Suporte interno ao ERP FOCCO** na Móveis Weihermann S.A.: sustentação de rotinas, correções e acompanhamento da base em produção.
+- **Fechamentos de custos contábeis e de estoques** mensais, com validação de movimentação e tratativa de divergência antes do fechamento.
+- **Coordenação do PCP** — programação de produção alinhada com o Comercial (capacidade, demanda, ordens de produção).
+- **Contratação e gestão de terceiros** para infraestrutura interna e manutenção do parque de máquinas.
+- **Sistema de apontamentos de OEE** (Vieli Consultoria Industrial): primeira versão da solução, com leitura em tempo real de parada de máquina e produção (ML, M2 e contadores) a partir de **CLPs WEG PL300, Panasonic, Siemens e Raspberry Pi** via **Modbus**, **sensores industriais** (encoder, sensor indutivo), programação básica nos CLPs, **C++ e Python sobre MySQL**, e instalação/comissionamento em campo em clientes de diversos portes, como **Herval, Zozzoli S.A. (Argentina) e Temasa**.
+- **Gestão de pessoas e carteira** (Viasoft, Unidade Indústria, 2011-2013) e o **desenvolvimento do ERP da Hightech Sistemas** como sócio-gerente (1998-2010).
+- Levantamento de requisito, treinamento de usuários e sustentação em ambiente de cliente.
+
+---
+
+## 7. Métricas apuradas
+
+| Métrica | Valor |
+|---|---|
+| Repositórios próprios (forks excluídos) | 33 |
+| Commits no branch padrão | 1.359 |
+| Volume versionado | 298,9 MB |
+| Python | 97,2 MB (71%) |
+| Camada de interface (HTML/JS/Vue/TS/CSS/SCSS) | 38,3 MB (28% do código contabilizado) |
+
+---
 
 Voltar para o currículo → [README](README.md)
